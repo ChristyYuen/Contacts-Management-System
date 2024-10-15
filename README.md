@@ -39,19 +39,19 @@ To run this project locally, clone the repository and follow these steps:
    cd contacts-management-system
 
 2. Set up a virtual environment (optional but recommended):
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. Install Py4web:
-  ```bash
-  pip install py4web
+    ```bash
+    pip install py4web
 
 4. Run the application:
-  ```bash
-  python3 wsgi.py
+    ```bash
+    python3 wsgi.py
 
-5. Open your browser and navigate to http://127.0.0.1:8000.
+5. Open your browser and navigate to `http://127.0.0.1:8000`.
 
 ## Lessons Learned
 During the development of this project, I learned the importance of maintaining data integrity in web applications. Implementing proper foreign key relationships ensured that when contacts were deleted, all associated data was also removed, preventing orphaned records in the database. This not only improved the application's reliability but also enhanced user experience by ensuring that users do not encounter outdated or irrelevant information.
